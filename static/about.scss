@@ -1,0 +1,323 @@
+
+@import 'paleta';
+@import 'nav';
+
+body{
+    overflow-x: hidden;
+}
+.box1{
+    position: relative;
+    top: 10vh;
+    display: grid;
+    margin-bottom: 100px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "decor tit"
+    "decor info";
+}
+.box2{
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "tit decor"
+    "info decor";
+}
+
+
+.header{
+    grid-area: tit;
+    display: flex;
+    align-self: center;
+    font-family: $brand-font;
+    font-size: 14px;
+    width: 100%;
+    color: $color-secondary-2-4;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    z-index: 1;
+    & h1{
+        text-justify: center;
+    }
+}
+
+.sal-animate:hover{
+    transform: rotateZ(3deg);
+    
+}
+
+.izq h1{
+    text-align: left;
+    padding: 0 60px 0 60px;
+}
+
+.der h1{
+    text-align: left;
+    padding: 0 60px 0 60px;
+}
+
+
+
+.text{
+    padding: 0 60px 0 60px;
+    grid-area: info;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+    font-family: $main-font;
+    line-height: 30px;
+    color: $color-secondary-2-3;
+}   
+.decor{
+    grid-area: decor;
+    overflow: hidden;
+    & img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.izq{
+    text-align: right;
+}
+
+.celes1{
+    font-size: 1.6em;
+}
+
+.citas{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    font-family: $title-font;
+    background: $Nav;
+    color: $color-secondary-1-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    z-index: 1000;
+    & h1{
+        width: 60%;
+        text-align: center;
+        font-style: italic;
+        align-self: center;
+    }
+    & p{
+        width: 80%;
+        padding-top: 2vh;
+        text-align: right;
+        font-style: italic;
+    }
+}
+.decorma-mob{
+    display: none;
+}
+.decorma{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        background-size: cover;
+    }
+    &::after{
+        content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background:$teen-party2;
+       opacity: 0.5;
+       z-index: 50;
+    }    
+
+}
+.medioambiente{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    z-index: 10;
+    font-family: $title-font;
+    color: $color-secondary-1-1;
+    & h1{
+        padding-top: 150px;
+        z-index: 1000;
+        text-align: right;
+        letter-spacing: 2px;
+    }
+    & h3{
+        z-index: 1000;
+        padding-top: 20px;
+        letter-spacing: 2px;
+        text-align: right;
+    }
+}
+.brand{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    width: 50%;
+    z-index: 51;
+    & img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .box1{
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 10% 50%;
+        row-gap: 5vh;
+        grid-template-areas: 
+        "decor"
+        "tit"
+        "info";
+    }
+    .box2{
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 15% 45%;
+        row-gap: 5vh;
+        grid-template-areas: 
+        "decor"
+        "tit"
+        "info";
+    }
+
+    .somos{
+        font-size: 30px;
+    }
+    .izq h1{
+        text-align: left;
+        padding: 0 10px 0 10px;
+    }
+    
+    .der h1{
+        text-align: left;
+        padding: 0 10px 0 10px;
+    }
+    .text{
+        padding: 0 10px 0 10px;
+        grid-area: info;
+        width: 90%;
+        font-size: 14px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        text-align: justify;
+        font-family: $main-font;
+        line-height: 25px;
+        color: $color-secondary-2-3;
+    }   
+    .citas{
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;   
+        & h1{
+            width: 50%;
+            font-size: 18px;
+            text-align: justify;
+            align-self: center;
+            font-style: italic;
+        }
+        & p{
+            width: 60%;
+            text-align: right;
+            align-self: center;
+            font-style: italic;
+        }
+    }
+    .medioambiente{
+        width: 100%;
+        & h1 {
+            font-size: 4vw;
+            padding-right: 5%;
+            padding-left: 5%;
+            letter-spacing: 2px;
+        }
+        & h3 {
+            padding-right: 5%;
+            padding-left: 5%;
+            font-size: 3vw;
+        }
+    }
+    .brand img{
+        width: 80%;
+        padding-right: 5%;
+    }
+    .decorma{
+    display: none;
+    }
+    .decorma-mob{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        background-size: cover;
+        & img{
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            background-size: cover;
+        }
+        &::after{
+            content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background:$teen-party2;
+           opacity: 0.5;
+           z-index: 50;
+        }    
+    
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .header h1{
+        font-size: 18px;
+        padding-left: 8%;
+    }
+    .brand {
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 350px) {
+    .citas{
+        & h1{
+            width: 80%;
+            font-size: 14px;
+            padding-left: 8%;
+        }
+        & p {
+            font-size: 12px;
+        }
+    .brand {
+        transform: translateX(50%);
+         }
+    }
+}

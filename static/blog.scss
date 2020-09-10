@@ -1,0 +1,122 @@
+@import 'paleta';
+@import 'nav';
+
+main{
+    position: relative;
+    top: 5vh;
+}
+
+.post{
+    position: relative;
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    column-gap: 5%;
+    margin-left: 5%;
+    grid-template-columns: 30% 50%;;
+    grid-template-areas: 
+    "decor content";
+}
+.decor{
+    grid-area: decor;
+    margin: 0;
+    overflow: hidden;
+    & img{
+        width: 100%;
+        border: 0.2px solid $Nav;
+        object-fit: cover;
+    }
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header{
+    & h1{
+        font-family: $title-font;
+        text-align: left;
+        font-size: 20px;
+        padding-top: 20px;
+        display: flex;
+        letter-spacing: 1px;
+        align-self: center;
+        justify-self: center;
+        color: $color-primary-0;
+    }
+    & p{
+        opacity: 0.5;
+        font-size: 12px;
+        text-align: right;
+        padding-right: 20px;
+ 
+    }    
+}
+.desc{ 
+    & p{
+        font-size: 14px;
+        padding-right: 20px;
+        padding-top: 20px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-style: italic;
+        color: $color-secondary-2-3;
+        line-height: 25px;
+    }
+}
+.cta{
+    color: $color-secondary-2-3;
+    text-align: right;
+    padding: 20px;
+    & a{
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+        background: $teen-party;
+        padding: 10px 25px;
+        &:hover{
+            background: $Nav;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .post{
+        row-gap: 2vh;
+        grid-template-columns: 50% 40%;
+        grid-template-rows: 40% 55% 5%;
+    
+    }
+    .desc p{ 
+        font-size: 14px;
+        padding: 15px 0;
+    }
+    .header h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .post{
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 800px) {
+    .post{
+        grid-template-columns: 90%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: 
+        "decor"
+        "content";
+    }
+    .post{
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .header h1{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+@font-face{
+    font-family: 'Avenir';
+    src: url(AvenirLTStd-Medium.otf)
+}
+//Fuentes
+$main-font2:'avenir', sans-serif;
+$main-font:'Montserrat', sans-serif;
+$cursive-font:'Architects Daughter', cursive;
+$title-font2: 'Playfair Display', serif;
+$brand-font: 'Red Hat Text', sans-serif;
+$title-font: 'Cinzel', serif;
+
+
+
+$brand1: #ffc757;
+$brand2: #FF4C4C;
+
+$Nav: #490A3D;
+$LandingBack2: #ffc7b2;
+$LandingBack: whitesmoke;
+
+$Card: #473A8F;
+
+$color-primary-0: #FF4C4C;	// Main Primary color */
+$color-primary-1: #FF9595;
+$color-primary-2: #FF6D6D;
+$color-primary-3: #F92626;
+$color-primary-4: #E40101;
+
+$color-secondary-1-0: #ffc757;	// Main Secondary color (1) */
+$color-secondary-1-1: #FFDE95;
+$color-secondary-1-2: #FFD26D;
+$color-secondary-1-3: #F9B826;
+$color-secondary-1-4: #E49E01;
+
+$color-secondary-2-0: #7C3BAB;	// Main Secondary color (2) */
+$color-secondary-2-1: #AA7CCC;
+$color-secondary-2-2: #8F56B9;
+$color-secondary-2-3: #7023A7;
+$color-secondary-2-4: #8540AA;
+
+$color-complement-0: #3DCC3D;	// Main Complement color */
+$color-complement-1: #83E083;
+$color-complement-2: #5BD45B;
+$color-complement-3: #1FC71F;
+$color-complement-4: #01B701;
+
+//Backgrounds
+$fly-high: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+$orig: #FFD080;
+$orig1: #fde6bd;
+$deep-blue:  linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+$frozen-heat: linear-gradient(-225deg, $color-primary-4 0%, $color-primary-0 48%,$color-primary-2  100%);
+$color-tit: #36494e;
+$teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+$teen-party2: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);;
+$happy-fisher: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+$teen-party-filter: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+
+
+//Colores
+$NavOld: #AD0039;
+$orig: #DBDA61;
+$orig2: #fde6bd;
+$Nav-Orig1: #8C52FF;
+$Nav-Orig: #823443;
+$one: #284367;
+$two: #4E7F9A;
+$three: #823443;
+$four: #839536;
+$five: #2B2724;
+
+//Paletas
+$Principal: #490A3D;
+$principal2: #824D8c;
+$Diego: #55678E;
+
+//Nueva
+$Comfy: #D8C0A8;
+$CherryMac: #821F3E;
+$DarkSteel: #181818;
+$NaturalDecay: #786060;
+$Moth: #C9446F; 
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background: whitesmoke;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: $main-font;
+    
+}
+.brand{
+    font-family: $brand-font;
+    align-self: center;
+}
+
+.rosa{
+    color: $brand1;
+}
+
+.rosa1{
+    color: $color-secondary-2-4;
+}
+
+
+.celes{
+    color: $brand2;
+    font-family: $brand-font;
+}
+.celes1{
+    color: $brand2;
+    font-family: $brand-font;
+}

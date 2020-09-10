@@ -1,0 +1,123 @@
+@import 'paleta';
+@import 'nav';
+
+
+.post{
+    display: grid;
+    position: relative;
+    top: 10vh;
+    background: white;
+    justify-self: center;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh auto auto;
+    grid-template-areas: 
+        "title"
+        "promo"
+        "info";
+}
+
+.title{
+    grid-area: title;
+    font-family: $title-font;
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 80%;
+    height: 50vh;
+    & h1{
+        font-size: 4.5vw;
+        color: white;
+        z-index: 3;
+    }
+    & h3{
+        font-size: 2vw;
+        color: white;
+        z-index: 3;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $Nav;
+        opacity: 0.15;
+        transform: translateY(-30%);
+
+    }
+    & img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transform: translateY(-30%);
+    }
+}
+
+.promo{
+    grid-area: promo;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    opacity: 0.8;
+    background: white;
+    & p{
+        width: 65%;
+        padding: 5vh 0;
+        font-style: italic;
+        text-align: justify;
+        color: $color-secondary-2-3;
+    }
+}
+
+.italic{
+    font-style: italic;
+
+}
+.contenido{
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    "texto masvistos";
+}
+
+
+.texto{
+    grid-area: texto;
+    padding: 30px 0;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    line-height: 25px;
+    transform: translateX(-50%);
+    & p{
+        font-size: 16px;
+        text-align: justify;
+    }
+    & h3{
+        padding: 20px 0;
+    }
+    & h4{
+        padding: 15px 0;
+    }
+    & ul{
+        padding: 40px;
+        list-style-type: symbols("");
+    }
+}
+
+.masvistos{
+    grid-area: masvistos;
+}
