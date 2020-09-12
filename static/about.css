@@ -48,7 +48,7 @@ body {
 }
 
 #navbar {
-  z-index: 100;
+  z-index: 1000000;
   height: 10vh;
   background-color: #490A3D;
   display: -webkit-box;
@@ -60,6 +60,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  top: 2vh;
   top: 0;
   -webkit-transition: top 0.8s;
   transition: top 0.8s;
@@ -115,6 +116,7 @@ body {
       justify-content: space-around;
   width: 50%;
   list-style: none;
+  z-index: 1000000;
 }
 
 .nav-items li {
@@ -376,10 +378,10 @@ body {
 .citas {
   position: relative;
   height: 30vh;
-  width: 100%;
+  width: 100vw;
   font-family: "Cinzel", serif;
-  background: #490A3D;
-  color: #F9B826;
+  color: #490A3D;
+  background: #FFD26D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +421,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -436,6 +440,7 @@ body {
 .decorma::after {
   content: '';
   position: absolute;
+  padding-top: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -457,17 +462,9 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
   z-index: 10;
   font-family: "Cinzel", serif;
   color: #FFDE95;
-}
-
-.medioambiente h1 {
-  padding-top: 150px;
-  z-index: 1000;
-  text-align: right;
-  letter-spacing: 2px;
 }
 
 .medioambiente h3 {
@@ -477,16 +474,56 @@ body {
   text-align: right;
 }
 
+.simbolo {
+  position: absolute;
+  top: 14%;
+  left: 12%;
+  z-index: 1000;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.simbolo img {
+  width: 15%;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 59%;
+  width: 50%;
+  z-index: 51;
+}
+
+.logo img {
+  width: 15%;
+}
+
 .brand {
   position: absolute;
-  top: 6%;
-  left: 50%;
+  top: 20%;
+  left: 67%;
   width: 50%;
   z-index: 51;
 }
 
 .brand img {
-  width: 50%;
+  width: 70%;
+}
+
+.titma {
+  position: relative;
+  padding-top: 300px;
+  z-index: 1000;
+  text-align: right;
+  letter-spacing: 2px;
+}
+
+.titma2 {
+  padding-top: 50px;
+  z-index: 1000;
+  text-align: right;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 850px) {

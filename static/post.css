@@ -48,7 +48,7 @@ body {
 }
 
 #navbar {
-  z-index: 100;
+  z-index: 1000000;
   height: 10vh;
   background-color: #490A3D;
   display: -webkit-box;
@@ -60,6 +60,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  top: 2vh;
   top: 0;
   -webkit-transition: top 0.8s;
   transition: top 0.8s;
@@ -115,6 +116,7 @@ body {
       justify-content: space-around;
   width: 50%;
   list-style: none;
+  z-index: 1000000;
 }
 
 .nav-items li {
@@ -325,8 +327,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #490A3D;
-  opacity: 0.15;
+  background: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+  opacity: 0.30;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
 }
@@ -357,15 +359,16 @@ body {
   -ms-flex-item-align: center;
       align-self: center;
   opacity: 0.8;
-  background: white;
+  background: #FFDE95;
 }
 
 .promo p {
   width: 65%;
   padding: 5vh 0;
+  line-height: 25px;
   font-style: italic;
   text-align: justify;
-  color: #7023A7;
+  color: #490A3D;
 }
 
 .italic {

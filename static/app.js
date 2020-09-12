@@ -1,4 +1,5 @@
 //Landing Page Animación
+let nav = document.getElementById("navbar");
 let logo = document.getElementById("logo");
 let brand = document.getElementById("brand");
 let page2 = document.getElementById("page2");

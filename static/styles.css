@@ -48,7 +48,7 @@ body {
 }
 
 #navbar {
-  z-index: 100;
+  z-index: 1000000;
   height: 10vh;
   background-color: #490A3D;
   display: -webkit-box;
@@ -115,6 +115,7 @@ body {
       justify-content: space-around;
   width: 50%;
   list-style: none;
+  z-index: 1000000;
 }
 
 .nav-items li {
@@ -263,11 +264,6 @@ body {
   }
 }
 
-#navbar {
-  border-bottom: 1px solid #F9B826;
-  z-index: 10000;
-}
-
 .bg-mob {
   display: none;
   height: 100vh;
@@ -381,7 +377,6 @@ body {
 .bg4 {
   -webkit-animation-delay: 18s;
           animation-delay: 18s;
-  margin-top: 10vh;
 }
 
 .bg5 {
@@ -510,6 +505,17 @@ body {
     height: 100vh;
     width: 100%;
   }
+  .bg-mob::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+    opacity: 0.3;
+    z-index: 50;
+  }
   .branding {
     width: 100%;
     height: 50%;
@@ -532,11 +538,11 @@ body {
     width: 100%;
     letter-spacing: 1px;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Architects Daughter", cursive;
   }
   .extra {
-    font-size: 0.7em;
+    font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,7 +567,7 @@ body {
     width: 100%;
     color: #490A3D;
     font-style: italic;
-    font-size: 1em;
+    font-size: 25px;
     font-family: "Red Hat Text", sans-serif;
     letter-spacing: 3px;
   }
@@ -576,18 +582,109 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .promo {
+    font-size: 5vw;
+  }
+  .extra {
+    font-size: 3vw;
+  }
+  .msj {
+    font-size: 3vw;
+  }
+}
+
+.producto {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  z-index: 20000;
+}
+
+.decorpage1 {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.decorpage1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+  opacity: 0.3;
+  z-index: 50;
+}
+
+.decorpage1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.venta {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-self: center;
+}
+
+.fact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px;
+}
+
+.ventit {
+  font-size: 2vw;
+  width: 100%;
+  text-align: center;
+  color: #490A3D;
+}
+
+.vendat {
+  font-size: 1.5vw;
+  width: 100%;
+  text-align: center;
+  color: #490A3D;
+}
+
 #page2 {
   position: relative;
   width: 100vw;
   z-index: 10000;
   background: white;
+  z-index: 20000;
 }
 
 .testimonio {
   position: relative;
   height: 30vh;
   width: 100%;
-  background-color: #490A3D;
+  color: #490A3D;
+  background: #FFD26D;
   z-index: 20000;
 }
 
@@ -597,12 +694,23 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Cinzel", serif;
   font-style: italic;
   width: 70%;
   text-align: center;
-  color: #ffc757;
+}
+
+.claves {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90vh;
 }
 
 .tit {
@@ -613,7 +721,7 @@ body {
   width: 90%;
   font-size: 5vw;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cinzel", serif;
   color: #7C3BAB;
   font-weight: bolder;
 }

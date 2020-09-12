@@ -48,7 +48,7 @@ body {
 }
 
 #navbar {
-  z-index: 100;
+  z-index: 1000000;
   height: 10vh;
   background-color: #490A3D;
   display: -webkit-box;
@@ -60,6 +60,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  top: 2vh;
   top: 0;
   -webkit-transition: top 0.8s;
   transition: top 0.8s;
@@ -115,6 +116,7 @@ body {
       justify-content: space-around;
   width: 50%;
   list-style: none;
+  z-index: 1000000;
 }
 
 .nav-items li {

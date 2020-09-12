@@ -1,11 +1,13 @@
+
 #navbar{
-    z-index: 100;
+    z-index: 1000000;
     height: 10vh;
     background-color: $Nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    top: 2vh;
     top: 0;
     transition: top 0.8s;
     width: 100vw;
@@ -44,6 +46,7 @@
     justify-content: space-around;
     width: 50%;
     list-style: none;
+    z-index: 1000000;
     & li{
         position: relative;
     }

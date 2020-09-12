@@ -25,7 +25,7 @@
         <ul class="nav-items">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="productos.html">"Productos"</a></li>
+            <li><a href="productos.html">Productos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -48,7 +48,7 @@
             <img class="bg7" src="img/lnd2/lnd7f.jpg" alt="">
             <div class="branding">
                 <img class="logo" id="logo" src="img/logo.png" alt="">
-                <img class="brand" src="img/brand.png" alt="">
+                <img class="brand" id="brand" src="img/brand.png" alt="">
                 <h3 data-sal-duration="1500" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce"
                     class="promo" id="promo">Cocina Natural para tu Mascota</h3>
             </div>
@@ -67,7 +67,7 @@
             <img class="bg6" src="img/lnd-mob/mob6f.jpg" alt="">
             <img class="bg7" src="img/lnd-mob/mob7f.jpg" alt="">
             <div class="branding">
-                <img class="brand" src="img/brand.png" alt="">
+                <img class="brand" id="brand" src="img/brand.png" alt="">
                 <h3 data-sal-duration="1500" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce"
                     class="promo" id="promo">Cocina Natural para tu Mascota</h3>
             </div>
@@ -82,120 +82,155 @@
                 <h1 data-sal-duration="1500" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce"
                     class="test" id="test1">"¡Ahora mi perro salta de felicidad cuando le doy de comer!"</h1>
             </div>
-            <h1 data-sal-duration="1500" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce"
-                class="tit">BENEFICIOS DE<br>LA DIETA NATURAL</h1>
-            <div class="benef">
-                <div class="decor">
-                    <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="pic1" src="img/1.jpg" alt="">
-                    <h1 data-sal-duration="1000" data-sal="zoom-in" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                        class="rank">#1</h1>
+            <div class="producto">
+                <div class="decorpage1">
+                    <img src="img/lnd2/page1.jpg" alt="">
                 </div>
-                <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
-                    data-sal-easing="ease-out-bounce" class="rbenef">MEJORA LA CALIDAD DE VIDA</h3>
-                <div data-sal-duration="1000" data-sal="fade" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                    class="rdesc">
-                    <p> ¡Está comprobado! ¡Tu mejor amigo será más feliz!<br>
-                        La alimentación es un aspecto fundamental en la vida de tu mascota (junto con el cariño y
-                        los paseos) Al cambiar su dieta por comida verdadera, sabrosa y apetitosa comprobarás
-                        enseguida como mejora su calidad de vida y vitalidad. Al mismo tiempo se fortalecerá tu vínculo
-                        con el.
-                        ¿Quieres comprobar como aumenta su felicidad?</p>
-                    <button class="btn">
-                        QUIERO SABER MAS
-                    </button>
-                </div>
-            </div>
-            <div class="benef">
-                <div class="decor">
-                    <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="rank">#2</h1>
-                    <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="pic1" src="img/2.jpg" alt="">
-                </div>
-                <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
-                    data-sal-easing="ease-out-bounce" class="rbenef">INGREDIENTES 100% NATURALES</h3>
-                <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                    class="rdesc">
-                    <p>Seleccionamos con cuidado y responsabilidad nuestros ingredientes. Balanceamos nuestras recetas
-                        para cubrir con todos los
-                        requerimientos nutricionales de nuestras queridas mascotas.<br> Usamos carnes y verduras frescas
-                        ricas en nutrientes. No agregamos ningun tipo de conservante, saborizante, ni colorantes
-                        artificiales.<br>Incluso tu puedes probar nuestras comidas. ¡Nosotros lo hacemos todo
-                        el
-                        tiempo!</p>
-                    <button class="btn">
-                        NUESTRAS RECETAS
-                    </button>
+                <div class="venta">
+                    <div data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                        data-sal-easing="ease-out-bounce" class="fact">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="ventit">LLEGÓ LA MEJOR ALIMENTACIÓN</h1>
+                        <p class="vendat">Alimento de Calidad Humana</p>
+                        <p class="vendat">Mejor para su salud y vitalidad</p>
+                        <p class="vendat">Aprobada por Nutricionistas y Veterinarios</p>
+                    </div>
+                    <div data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                        data-sal-easing="ease-out-bounce" class="fact">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="2000"
+                            data-sal-easing="ease-out-bounce" class="ventit">INGREDIENTES FRESCOS Y BALANCEADOS</h1>
+                        <p class="vendat">Comida de Verdad</p>
+                        <p class="vendat">Carnes de Res, Pollo y Cerdo + Verduras y cereales.</p>
+                    </div>
+                    <div data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                        data-sal-easing="ease-out-bounce" class="fact">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="3000"
+                            data-sal-easing="ease-out-bounce" class="ventit">LISTO PARA SERVIR</h1>
+                        <p class="vendat">Sólo descongelar y servir</p>
+                        <p class="vendat">¡Es muy fácil y práctico!</p>
+                    </div>
                 </div>
             </div>
+            <div class="claves">
+                <h1 data-sal-duration="1500" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce"
+                    class="tit">LAS 5 CLAVES DE<br>LA DIETA NATURAL</h1>
+                <div class="benef">
+                    <div class="decor">
+                        <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="pic1" src="img/1.jpg" alt="">
+                        <h1 data-sal-duration="1000" data-sal="zoom-in" data-sal-delay="0"
+                            data-sal-easing="ease-out-bounce" class="rank">#1</h1>
+                    </div>
+                    <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
+                        data-sal-easing="ease-out-bounce" class="rbenef">MEJORA LA CALIDAD DE VIDA</h3>
+                    <div data-sal-duration="1000" data-sal="fade" data-sal-delay="0" data-sal-easing="ease-out-bounce"
+                        class="rdesc">
+                        <p> ¡Está comprobado! ¡Tu mejor amigo será más feliz!<br>
+                            La alimentación es un aspecto fundamental en la vida de tu mascota (junto con el cariño y
+                            los paseos) Al cambiar su dieta por comida verdadera, sabrosa y apetitosa comprobarás
+                            enseguida como mejora su calidad de vida y vitalidad. Al mismo tiempo se fortalecerá tu
+                            vínculo
+                            con el.
+                            ¿Quieres comprobar como aumenta su felicidad?</p>
+                        <button class="btn">
+                            QUIERO SABER MAS
+                        </button>
+                    </div>
+                </div>
+                <div class="benef">
+                    <div class="decor">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="rank">#2</h1>
+                        <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="pic1" src="img/2.jpg" alt="">
+                    </div>
+                    <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
+                        data-sal-easing="ease-out-bounce" class="rbenef">INGREDIENTES 100% NATURALES</h3>
+                    <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0"
+                        data-sal-easing="ease-out-bounce" class="rdesc">
+                        <p>Seleccionamos con cuidado y responsabilidad nuestros ingredientes. Balanceamos nuestras
+                            recetas
+                            para cubrir con todos los
+                            requerimientos nutricionales de nuestras queridas mascotas.<br> Usamos carnes y verduras
+                            frescas
+                            ricas en nutrientes. No agregamos ningun tipo de conservante, saborizante, ni colorantes
+                            artificiales.<br>Incluso tu puedes probar nuestras comidas. ¡Nosotros lo hacemos todo
+                            el
+                            tiempo!</p>
+                        <button class="btn">
+                            NUESTRAS RECETAS
+                        </button>
+                    </div>
+                </div>
 
-            <div class="benef">
-                <div class="decor">
-                    <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="rank">#3</h1>
-                    <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="pic1" src="img/3.jpg" alt="">
+                <div class="benef">
+                    <div class="decor">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="rank">#3</h1>
+                        <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="pic1" src="img/3.jpg" alt="">
+                    </div>
+                    <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
+                        data-sal-easing="ease-out-bounce" class="rbenef">ES LA MEJOR ALIMENTACIÓN</h3>
+                    <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0"
+                        data-sal-easing="ease-out-bounce" class="rdesc">
+                        <p>Es más sano, es más seguro. Es la mejor alimentación que puedes ofrecerle.<br>Entre las
+                            principales ventajas para su salud podemos destacar,
+                            una mejora en su digestión, además la alimentación natural refuerza su sistema
+                            inmune, aumenta la hidratación,
+                            mejora su condición física y estado emocional.<br>Pues claro... ¡Es comida de verdad!
+                            Además, es muy seguro. La cocción de nuestros alimentos elimina bacterias y
+                            parásitos peligrosos para la salud.<br>Nuestras recetas fueron elaboradas por nutricionistas
+                            y
+                            aprobadas por veterinarios</p>
+                        <button class="btn">
+                            MÁS INFORMACIÓN
+                        </button>
+                    </div>
                 </div>
-                <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
-                    data-sal-easing="ease-out-bounce" class="rbenef">ES LA MEJOR ALIMENTACIÓN</h3>
-                <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                    class="rdesc">
-                    <p>Es más sano, es más seguro. Es la mejor alimentación que puedes ofrecerle.<br>Entre las
-                        principales ventajas para su salud podemos destacar,
-                        una mejora en su digestión, además la alimentación natural refuerza su sistema
-                        inmune, aumenta la hidratación,
-                        mejora su condición física y estado emocional.<br>Pues claro... ¡Es comida de verdad!
-                        Además, es muy seguro. La cocción de nuestros alimentos elimina bacterias y
-                        parásitos peligrosos para la salud.<br>Nuestras recetas fueron elaboradas por nutricionistas y
-                        aprobadas por veterinarios</p>
-                    <button class="btn">
-                        MÁS INFORMACIÓN
-                    </button>
+                <div class="benef">
+                    <div class="decor">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="rank">#4</h1>
+                        <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="pic1" src="img/4.jpg" alt="">
+                    </div>
+                    <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
+                        data-sal-easing="ease-out-bounce" class="rbenef">CUIDA TU ECONOMÍA</h3>
+                    <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0"
+                        data-sal-easing="ease-out-bounce" class="rdesc">
+                        <p>Alimentarse mejor no significa gastar más.
+                            Nuestras recetas tiene muy en cuenta la importancia de la economía hogareña y procuramos
+                            que nuestros productos ofrezcan la mejor relación calidad/precio del mercado, mejorando el
+                            precio
+                            por kilo de alimento de las principales marcas comerciales.
+                        </p>
+                        <button class="btn">
+                            VER TABLAS COMPARATIVAS
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="benef">
-                <div class="decor">
-                    <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="rank">#4</h1>
-                    <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="pic1" src="img/4.jpg" alt="">
-                </div>
-                <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
-                    data-sal-easing="ease-out-bounce" class="rbenef">CUIDA TU ECONOMÍA</h3>
-                <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                    class="rdesc">
-                    <p>Alimentarse mejor no significa gastar más.
-                        Nuestras recetas tiene muy en cuenta la importancia de la economía hogareña y procuramos
-                        que nuestros productos ofrezcan la mejor relación calidad/precio del mercado, mejorando el
-                        precio
-                        por kilo de alimento de las principales marcas comerciales.
-                    </p>
-                    <button class="btn">
-                        VER TABLAS COMPARATIVAS
-                    </button>
-                </div>
-            </div>
-            <div class="benef">
-                <div class="decor">
-                    <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="rank">#5</h1>
-                    <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
-                        data-sal-easing="ease-out-bounce" class="pic1" src="img/5.jpg" alt="">
-                </div>
-                <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
-                    data-sal-easing="ease-out-bounce" class="rbenef">PORCIONES LISTAS</h3>
-                <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce"
-                    class="rdesc">
-                    <p>Nuestras comidas vienen listas para servir. Sólo es necesario
-                        descongelar el alimento unas horas antes, o simplemente, durante unos minutos en el
-                        horno-microhondas.
-                        Durante el tiempo de preparación del alimento, tu amiguito te acompañara feliz y ansioso por
-                        disfrutar su deliciosa comida. <br>¡Sólo requiere unos pocos minutos diarios!
-                    </p>
-                    <button class="btn">
-                        PORCIONES DIARIAS RECOMENDADAS
-                    </button>
+                <div class="benef">
+                    <div class="decor">
+                        <h1 data-sal-duration="2000" data-sal="zoom-in" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="rank">#5</h1>
+                        <img data-sal-duration="2000" data-sal="slide-up" data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce" class="pic1" src="img/5.jpg" alt="">
+                    </div>
+                    <h3 data-sal-duration="2000" data-sal="slide-right" data-sal-delay="150"
+                        data-sal-easing="ease-out-bounce" class="rbenef">PORCIONES LISTAS</h3>
+                    <div data-sal-duration="1000" data-sal="slide-up" data-sal-delay="0"
+                        data-sal-easing="ease-out-bounce" class="rdesc">
+                        <p>Nuestras comidas vienen listas para servir. Sólo es necesario
+                            descongelar el alimento unas horas antes, o simplemente, durante unos minutos en el
+                            horno-microhondas.
+                            Durante el tiempo de preparación del alimento, tu amiguito te acompañara feliz y ansioso por
+                            disfrutar su deliciosa comida. <br>¡Sólo requiere unos pocos minutos diarios!
+                        </p>
+                        <button class="btn">
+                            PORCIONES DIARIAS RECOMENDADAS
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

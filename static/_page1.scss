@@ -1,0 +1,61 @@
+.producto{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: 20000;
+    
+}
+.decorpage1{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    &::after{
+        content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: black
+       opacity: 0.3;
+       z-index: 50;
+    }    
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.venta{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+.fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+
+.ventit{
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+    color: $Nav;
+}
+.vendat{
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    color: $Nav;
+}
